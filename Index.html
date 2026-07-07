@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supabase অনলাইন MCQ পরীক্ষা</title>
+    <title>অনলাইন MCQ পরীক্ষা</title>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
@@ -30,14 +30,14 @@
 <body>
 
     <div class="start-container" id="start-screen">
-        <h1>অনলাইন MCQ পরীক্ষা (Supabase)</h1>
+        <h1>অনলাইন MCQ পরীক্ষা</h1>
         <p>পরীক্ষা শুরু করতে আপনার নাম লিখুন (সময়: ২৫ মিনিট)</p>
         <input type="text" id="student-name" class="input-field" placeholder="আপনার নাম লিখুন..." required><br>
         <button class="btn" onclick="startQuiz()">পরীক্ষা শুরু করুন</button>
         <p id="loading" style="display:none;">Supabase থেকে প্রশ্ন লোড হচ্ছে, অপেক্ষা করুন...</p>
     </div>
 
-    <div class="timer-box" id="timer-box">অবशिष्ट সময়: <span id="timer">25:00</span></div>
+    <div class="timer-box" id="timer-box">অবশিষ্ট সময়: <span id="timer">25:00</span></div>
 
     <div class="quiz-container" id="quiz-screen" style="display: none;">
         <div id="result" class="result-box"></div>
